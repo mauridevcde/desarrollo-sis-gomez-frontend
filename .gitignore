@@ -1,3 +1,6 @@
+*
+!dist
+
 # Logs
 logs
 *.log
@@ -10,16 +13,8 @@ lerna-debug.log*
 node_modules
 dist-ssr
 *.local
-src
 public
-index.html
-eslintrc.cjs
-package.json
-package-lock.json
-postcss.config.js
-README.md
-tailwind.config.js
-vite.config.js
+src
 
 # Editor directories and files
 .vscode/*
