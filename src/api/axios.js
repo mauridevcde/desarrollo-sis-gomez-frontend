@@ -2,7 +2,7 @@ import axios from "axios";
 import { useAuthStore } from "../store/authStore";
 
 const authApi = axios.create({
-  baseURL: "http://localhost:3000/",
+  baseURL: "https://desarrollo-sis-gomez-backend-production.up.railway.app/",
   withCredentials: true,
 });
 
