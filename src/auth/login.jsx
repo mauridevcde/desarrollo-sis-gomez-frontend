@@ -1,4 +1,4 @@
-import { Link } from "@mui/material";
+
 import { useState } from "react";
 
 import { useForm } from "react-hook-form";
@@ -6,6 +6,7 @@ import { useAuthStore } from "../store/authStore";
 import { loginRequest } from "../api/auth/useAuth";
 import { useMutation } from "@tanstack/react-query";
 import logocapicorp from "../assets/capicorppn.png";
+import { Link } from "react-router-dom";
 export const Login = () => {
   const { register, handleSubmit } = useForm();
 
@@ -258,7 +259,7 @@ export const Login = () => {
             <div className="mb-5">
               <input
                 type="submit"
-                value="Sign In"
+                value="Iniciar Sesión"
                 className="w-full cursor-pointer rounded-lg border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90"
               />
             </div>
@@ -266,7 +267,7 @@ export const Login = () => {
             <div className="mt-6 text-center">
               <p>
                 Aún no tienes una cuenta?{" "}
-                <Link to="/auth/signup" className="text-primary">
+                <Link to="/registro" className="text-primary">
                   Registro
                 </Link>
               </p>
